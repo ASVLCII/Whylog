@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Whylog, Git as an intent database</title>
+  <desc id="desc">A dark terminal-inspired banner showing a decision graph connected to a Git commit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090b12"/>
+      <stop offset="0.55" stop-color="#101527"/>
+      <stop offset="1" stop-color="#17102b"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#55e6c1"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <g opacity=".14" stroke="#8b93a7"><path d="M0 70h1200M0 140h1200M0 210h1200M0 280h1200M0 350h1200"/><path d="M100 0v420M200 0v420M300 0v420M400 0v420M500 0v420M600 0v420M700 0v420M800 0v420M900 0v420M1000 0v420M1100 0v420"/></g>
+  <g transform="translate(90 72)" fill="none" stroke="url(#ink)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M40 26v190c0 38 27 62 64 62h90"/>
+    <path d="M40 88h82c38 0 62 24 62 62v30"/>
+    <circle cx="40" cy="26" r="14" fill="#090b12"/>
+    <circle cx="40" cy="88" r="14" fill="#090b12"/>
+    <circle cx="184" cy="180" r="14" fill="#090b12"/>
+    <circle cx="194" cy="278" r="14" fill="#090b12"/>
+  </g>
+  <text x="360" y="165" fill="#f7f8fc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="92" font-weight="700" letter-spacing="-5">whylog</text>
+  <rect x="362" y="190" width="590" height="3" rx="2" fill="url(#ink)"/>
+  <text x="363" y="246" fill="#c9cfdd" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28">git as an intent database</text>
+  <text x="364" y="304" fill="#55e6c1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">$ whylog why src/core.py:42</text>
+  <text x="364" y="341" fill="#8b93a7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">DECISION  keep the boring path fast</text>
+</svg>
